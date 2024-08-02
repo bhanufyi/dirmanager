@@ -1,0 +1,35 @@
+{
+  "name": "@bhanufyi/dirmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "dirmanager": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "bundle": "npx -y ts-node scripts/build.ts ./src/index.ts",
+    "dev": "tsc -w"
+  },
+  "keywords": [
+    "cli",
+    "dirmanager",
+    "commander",
+    "figlet"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": "https://github.com/bhanufyi/bhanufyi",
+  "homepage": "https://github.com/bhanufyi/bhanufyi#readme",
+  "packageManager": "pnpm@8.9.0+sha256.8f5264ad1d100da11a6add6bb8a94c6f1e913f9e9261b2a551fabefad2ec0fec",
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^22.1.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "figlet": "^1.7.0"
+  }
+}

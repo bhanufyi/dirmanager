@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+  },
+  "include": [
+    "**/*.ts" // Make sure this path covers all your TypeScript files.
+  ],
+  "exclude": ["node_modules", "dist", "scripts"]
+}
