@@ -10,7 +10,7 @@
     "build": "tsc",
     "bundle": "npx -y ts-node scripts/build.ts ./src/index.ts",
     "prepublish": "pnpm run bundle",
-    "publish": "echo \"publishing\" && pnpm publish --access public",
+    "publish": "echo \"publishing\" && pnpm publish --access public --no-git-checks",
     "dev": "tsc -w"
   },
   "keywords": [
