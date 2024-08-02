@@ -9,6 +9,8 @@
   "scripts": {
     "build": "tsc",
     "bundle": "npx -y ts-node scripts/build.ts ./src/index.ts",
+    "prepublish": "pnpm run bundle",
+    "publish": "echo \"publishing\" && pnpm version patch && git push --follow-tags && pnpm publish --access public",
     "dev": "tsc -w"
   },
   "keywords": [
@@ -17,10 +19,10 @@
     "commander",
     "figlet"
   ],
-  "author": "",
+  "author": "Bhanu Prasad Cherukuvada",
   "license": "ISC",
-  "repository": "https://github.com/bhanufyi/bhanufyi",
-  "homepage": "https://github.com/bhanufyi/bhanufyi#readme",
+  "repository": "https://github.com/bhanufyi/dirmanager",
+  "homepage": "https://github.com/bhanufyi/dirmanager#readme",
   "packageManager": "pnpm@8.9.0+sha256.8f5264ad1d100da11a6add6bb8a94c6f1e913f9e9261b2a551fabefad2ec0fec",
   "devDependencies": {
     "@types/figlet": "^1.5.8",

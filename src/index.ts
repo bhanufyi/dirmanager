@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { listDirContents } from "./commands/list-dirs";
 import { createDir } from "./commands/create-dir";
 import { createFile } from "./commands/create-file";
